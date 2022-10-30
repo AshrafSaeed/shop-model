@@ -2,6 +2,8 @@
 
 namespace AshrafSaeed\Shop\Contracts;
 
+use AshrafSaeed\Shop\Product;
+
 interface CategoryInterface
 {
     public function getId(): int;

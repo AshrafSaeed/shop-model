@@ -2,6 +2,8 @@
 
 namespace AshrafSaeed\Shop\Contracts;
 
+use AshrafSaeed\Shop\{CartItem, Product};
+
 interface CartInterface
 {
     public function getItems(): array;

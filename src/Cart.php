@@ -3,6 +3,7 @@
 namespace AshrafSaeed\Shop;
 
 use AshrafSaeed\Shop\Contracts\CartInterface;
+use AshrafSaeed\Shop\{Product, CartItem};
 
 class Cart implements CartInterface
 {
@@ -30,7 +31,7 @@ class Cart implements CartInterface
     /**
      * @param Product $product
      * @param int $quantity
-     * @return \CartItem
+     * @return CartItem
      * @throws \Exception
      */
     public function addProduct(Product $product, int $quantity): CartItem
