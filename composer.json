@@ -1,0 +1,16 @@
+{
+    "name": "ashrafsaeed/shop-model",
+    "description": "That is a simple PHP task by P&G",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Muhammad Ashraf",
+            "email": "avanix.sol@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AshrafSaeed\\Shop\\": "src/"
+        }
+    }
+}

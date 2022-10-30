@@ -1,7 +1,11 @@
 <?php
 
+namespace AshrafSaeed\Shop;
 
-class CartItem
+use AshrafSaeed\Shop\Product;
+use AshrafSaeed\Shop\Contracts\CartItemInterface;
+
+class CartItem implements CartItemInterface
 {
     /**
      * CartItem constructor.
@@ -10,13 +14,13 @@ class CartItem
      * @param int      $quantity
      */
     public function __construct(
-        private \Product $product, 
+        private Product $product, 
         private int $quantity
     )
     {}
 
     /**
-     * @return \Product
+     * @return Product
      */
     public function getProduct(): Product
     {

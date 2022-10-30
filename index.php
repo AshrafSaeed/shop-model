@@ -1,9 +1,8 @@
 <?php
 
-require_once "Product.php";
-require_once "Cart.php";
-require_once "CartItem.php";
+require __DIR__ . '/vendor/autoload.php';
 
+use AshrafSaeed\Shop\{Product, Cart};
 
 // Create new products
 $product1 = new Product(1, "digital", "product 1", "artical_number_1", 150.00, 100, "{image_1_path, image_2_path}");

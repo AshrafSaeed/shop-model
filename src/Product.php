@@ -1,7 +1,9 @@
 <?php
+namespace AshrafSaeed\Shop;
 
+use AshrafSaeed\Shop\Contracts\ProdcutInterface;
 
-class Product
+class Product implements ProdcutInterface
 {
     /**
      * Product constructor.

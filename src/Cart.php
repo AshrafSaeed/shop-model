@@ -1,7 +1,10 @@
 <?php
 
+namespace AshrafSaeed\Shop;
 
-class Cart
+use AshrafSaeed\Shop\Contracts\CartInterface;
+
+class Cart implements CartInterface
 {
     /**
      * @var CartItem[]
@@ -19,7 +22,7 @@ class Cart
     /**
      * @param \CartItem[] $items
      */
-    public function setItems($items)
+    public function setItems($items): void
     {
         $this->items = $items;
     }

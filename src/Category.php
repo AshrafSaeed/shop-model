@@ -1,16 +1,16 @@
 <?php 
 
-class Category
+namespace AshrafSaeed\Shop;
+
+use AshrafSaeed\Shop\Contracts\CategoryInterface;
+
+class Category implements CategoryInterface
 {
     /**
      * Product constructor.
      *
      * @param int    $id
      * @param string $name
-     * @param string $article_number
-     * @param float  $price
-     * @param int    $quantity
-     * @param string $images
      */
     public function __construct(
         private int $id, 
@@ -34,9 +34,8 @@ class Category
         return $this->name;
     }
 
-    public function addProduct(Product $product): 
+    public function addProduct(Product $product): string
     {
-    	
-
+    	retiurn 'Product added successfully'
     }
 }
